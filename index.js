@@ -6,12 +6,14 @@ const port = 3000
 const userRoute = require('./routes/user.routes.js')
 const reactionRoute = require('./routes/reaction.routes.js')
 const reactionOccuranceRoute = require('./routes/reactionOccurance.routes.js')
+const allergyRoute = require('./routes/allergy.routes.js')
 app.use(express.json());
 app.use(bodyParser.json());
 require('./db/mongodb')
 app.use('/user', userRoute);
 app.use('/reaction', reactionRoute);
 app.use('/reactionOccurance', reactionOccuranceRoute);
+app.use('/allergy', allergyRoute);
 
 
 app.use(function (req, res, next){

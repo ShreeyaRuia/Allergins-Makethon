@@ -75,4 +75,4 @@ const deleteReaction = (req, res) => {
         });
 };
 
-modules.export = { getAllReactions, getReactionById , updateReaction, deleteReaction, createReaction}
+module.exports = { getAllReactions, getReactionById , updateReaction, deleteReaction, createReaction}

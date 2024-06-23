@@ -1,5 +1,5 @@
-const Reaction = require('./models/Reaction');
-const ReactionOccurrence = require('./models/ReactionOccurrence');
+const Reaction = require('../db/models/Reaction.model');
+const ReactionOccurrence = require('../db/models/ReactionOccurance.model');
 
 // Example: Update ReactionOccurrence based on a new reaction
 async function updateReactionOccurrence(userId, allergyId, severity, startDate, endDate) {
@@ -51,7 +51,7 @@ const getReactionOccurance = (req,res)=>{
     //return occurances
 }
 
-modules.export = {createReactionOccurance, getReactionOccurance}
+module.exports = {createReactionOccurance, getReactionOccurance}
 
 // Usage example
 // const userId = 'user_id_here';

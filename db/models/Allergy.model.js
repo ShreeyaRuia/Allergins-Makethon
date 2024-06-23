@@ -3,11 +3,6 @@ const Schema = mongoose.Schema;
 
 // Define schema for the allergy collection
 const allergySchema = new Schema({
-    allergyid: {
-        type: String,
-        required: true,
-        unique: true
-    },
     name: {
         type: String,
         required: true
